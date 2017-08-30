@@ -2,7 +2,7 @@
 #ifndef PINS_ARDUINO_H_
 #define PINS_ARDUINO_H_
 
-#define KONTAKT_BEACON
+#define SMART_BEACON_24
 
 #define D0 0 
 #define D1 1 
