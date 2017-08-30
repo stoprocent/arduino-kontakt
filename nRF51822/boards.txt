@@ -1,7 +1,7 @@
 
 ##############################################################
 
-Kontakt_io_Smart_Beacon_24.name=Smart Beacon 2.4 (Kontakt.io)
+Kontakt_io_Smart_Beacon_24.name=Smart Beacon v2.4
 Kontakt_io_Smart_Beacon_24.upload.tool=openocd
 Kontakt_io_Smart_Beacon_24.upload.protocol=
 Kontakt_io_Smart_Beacon_24.upload.maximum_size=262144

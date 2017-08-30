@@ -1,5 +1,5 @@
 
-# nRF51822 compile variables
+# KONTAKTIO_nRF51822 compile variables
 # -------------------------
 
 name=Kontakt.io Beacons
@@ -40,9 +40,8 @@ compiler.elf2hex.flagx=-O ihex
 # Calculate hex size options
 compiler.size.cmd=arm-none-eabi-size
 
-# RBL_nRF51822 compile patterns
+# KONTAKTIO_nRF51822 compile patterns
 # ------------------------
-
 
 ## Compile S files
 recipe.S.o.pattern="{compiler.path}{compiler.S.cmd}" {compiler.S.flags} "{source_file}" -o "{object_file}"
@@ -96,4 +95,4 @@ tools.openocd.erase.pattern=
 
 tools.openocd.bootloader.params.verbose=-d2
 tools.openocd.bootloader.params.quiet=-d0
-tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{program.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "init; halt; nrf51 mass_erase; program {{{runtime.platform.path}/softdevice/s130_nrf51_2.0.1_softdevice.hex}} verify reset; shutdown;"
+tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{program.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "init; halt; nrf51 mass_erase; program {{{runtime.platform.path}/softdevice/s130_nrf51_1.0.0_softdevice.hex}} verify reset; shutdown;"
