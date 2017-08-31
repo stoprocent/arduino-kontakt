@@ -14,8 +14,8 @@
             "category": "Kontakt.io",
             "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.0.0.zip",
             "archiveFileName": "arduino-kontaktio-1.0.0.zip",
-            "checksum": "SHA-256:00D64A6A9ADB211AC45D4B82F899B7257F2A20037DD705065689D984152796CC",
-            "size": "1400638",
+            "checksum": "SHA-256:507B6047618C379B955FCE58A562B661C495AA3F0853A47E16B64777D30106F3",
+            "size": "1399551",
             "boards": [{
                 "name": "Smart Beacon 2.4 (Kontakt.io)"
             }],
