@@ -1,5 +1,5 @@
 
-# nRF51822-Arduino
+# arduino-kontaktio
 ===
 
 This branch is to provide BLE concurrent Central and Peripheral using Nordic SoftDevice S130 and also provides support for the Arduino IDE to compile nRF51822 firmware. This aims to provide fast prototyping and learning the IoT development using the Bluetooth Low Engergy (BLE) technology.
