@@ -12,10 +12,10 @@
             "architecture": "nRF51822",
             "version": "1.0.0",
             "category": "Kontakt.io",
-            "url": "https://s3-eu-west-1.amazonaws.com/kontaktio-mobile/arduino-kontaktio-1.0.0.zip",
+            "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.0.0.zip",
             "archiveFileName": "arduino-kontaktio-1.0.0.zip",
-            "checksum": "SHA-256:1FFA3AD324B4C9F06A3C762CE954C889ECFD587BEB019EE8447070226D35E354",
-            "size": "1401151",
+            "checksum": "SHA-256:00D64A6A9ADB211AC45D4B82F899B7257F2A20037DD705065689D984152796CC",
+            "size": "1400638",
             "boards": [{
                 "name": "Smart Beacon 2.4 (Kontakt.io)"
             }],
