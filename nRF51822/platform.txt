@@ -77,17 +77,17 @@ recipe.size.regex=\.text\s+([0-9]+).*
 # OpenOCD sketch upload
 #
 
-tools.openocd.path={runtime.tools.openocd-0.10.0-dev.nrf5.path}
+tools.openocd.path={runtime.tools.openocd-0.10.0-dev-nrf5.path}
 tools.openocd.cmd=bin/openocd
 tools.openocd.cmd.windows=bin/openocd.exe
 
 tools.openocd.upload.params.verbose=-d2
 tools.openocd.upload.params.quiet=-d0
-tools.openocd.upload.pattern="{path}/{cmd}" {upload.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{upload.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "program {{{build.path}/{build.project_name}.hex}} verify reset; shutdown;"
+tools.openocd.upload.pattern="{path}/{cmd}" {upload.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{program.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "program {{{build.path}/{build.project_name}.hex}} verify reset; shutdown;"
 
 tools.openocd.program.params.verbose=-d2
 tools.openocd.program.params.quiet=-d0
-tools.openocd.program.pattern="{path}/{cmd}" {program.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{upload.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "program {{{build.path}/{build.project_name}.hex}} verify reset; shutdown;"
+tools.openocd.program.pattern="{path}/{cmd}" {program.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{program.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "program {{{build.path}/{build.project_name}.hex}} verify reset; shutdown;"
 
 tools.openocd.erase.params.verbose=-d3
 tools.openocd.erase.params.quiet=-d0
