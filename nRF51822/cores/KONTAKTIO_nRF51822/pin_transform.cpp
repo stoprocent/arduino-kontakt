@@ -39,8 +39,8 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
     {
         case 0 : return_pin = P0_11;break;      //D0/RXD/MISO
         case 1 : return_pin = P0_9;break;       //D1/TXD/MOSI
-        case 2 : return_pin = P0_10;break;      //D2/CTS/CS/SDA
-        case 3 : return_pin = P0_8;break;       //D3/RTS/SCK/SCL
+        case 2 : return_pin = P0_27;break;      //D2/CTS/CS/SDA
+        case 3 : return_pin = P0_24;break;       //D3/RTS/SCK/SCL
 
         case 4 : return_pin = P0_28;break;      //D4
         case 5 : return_pin = P0_29;break;      //D5
