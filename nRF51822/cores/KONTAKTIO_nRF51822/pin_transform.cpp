@@ -34,27 +34,40 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
 {
     PinName return_pin = (PinName)NC;
 
+#ifdef SMART_BEACON_22
+    switch(pin)
+    {
+        case 0 : return_pin = P0_24;break;      //D0/RXD/MISO
+        case 1 : return_pin = P0_25;break;       //D1/TXD/MOSI
+        case 2 : return_pin = P0_26;break;      //D2/CTS/CS/SDA
+        case 3 : return_pin = P0_27;break;       //D3/RTS/SCK/SCL
+
+        case 4 : return_pin = P0_3;break;      //D4
+        case 5 : return_pin = P0_4;break;      //D5
+        case 6 : return_pin = P0_5;break;      //D6
+        case 7 : return_pin = P0_6;break;       //D7
+
+        default : return_pin = (PinName)NC;break;
+    }
+#endif
+
 #ifdef SMART_BEACON_24
     switch(pin)
     {
-        case 0 : return_pin = P0_11;break;      //D0/RXD/MISO
-        case 1 : return_pin = P0_9;break;       //D1/TXD/MOSI
-        case 2 : return_pin = P0_27;break;      //D2/CTS/CS/SDA
-        case 3 : return_pin = P0_24;break;       //D3/RTS/SCK/SCL
+        case 0 : return_pin = P0_5;break;      //D0/RXD
+        case 1 : return_pin = P0_6;break;       //D1/TXD
+        case 2 : return_pin = P0_27;break;      //D2/SDA
+        case 3 : return_pin = P0_24;break;       //D3/SCL
 
-        case 4 : return_pin = P0_28;break;      //D4
-        case 5 : return_pin = P0_29;break;      //D5
-        case 6 : return_pin = P0_15;break;      //D6
-        case 7 : return_pin = P0_7;break;       //D7
+        default : return_pin = (PinName)NC;break;
+    }
+#endif
 
-        case 13 : return_pin = P0_19;break;     //D13/LED
-
-        case 8 : return_pin = P0_1;break;       //A0
-        case 9 : return_pin = P0_2;break;       //A1
-        case 10 : return_pin = P0_3;break;      //A2
-        case 11 : return_pin = P0_4;break;      //A3
-        case 12 : return_pin = P0_5;break;      //A4
-        case 14 : return_pin = P0_6;break;      //A5
+#ifdef USB_BEACON_11
+    switch(pin)
+    {
+        case 0 : return_pin = P0_26;break;      //D0/RXD
+        case 1 : return_pin = P0_27;break;       //D1/TXD
 
         default : return_pin = (PinName)NC;break;
     }

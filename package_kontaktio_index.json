@@ -10,15 +10,17 @@
         "platforms": [{
             "name": "Kontakt.io Beacons (nRF51822)",
             "architecture": "nRF51822",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "category": "Kontakt.io",
-            "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.0.0.zip",
-            "archiveFileName": "arduino-kontaktio-1.0.0.zip",
-            "checksum": "SHA-256:507B6047618C379B955FCE58A562B661C495AA3F0853A47E16B64777D30106F3",
-            "size": "1399551",
-            "boards": [{
-                "name": "Smart Beacon 2.4 (Kontakt.io)"
-            }],
+            "url": "https://s3-eu-west-1.amazonaws.com/kontaktio-mobile/arduino-kontaktio-1.1.0.zip",
+            "archiveFileName": "arduino-kontaktio-1.1.0.zip",
+            "checksum": "SHA-256:8A146BA77AD44A344DFE7817D7A3388D3F21318489E2ED3EDCE394F02EA84FC2",
+            "size": "1403617",
+            "boards": [
+                {"name": "Smart Beacon 2.2 (Kontakt.io)"},
+                {"name": "Smart Beacon 2.4 (Kontakt.io)"},
+                {"name": "USB Beacon 1.1 (Kontakt.io)"}
+            ],
             "toolsDependencies": [{
                     "packager": "Kontakt.io",
                     "name": "arm-none-eabi-gcc",
