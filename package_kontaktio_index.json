@@ -12,7 +12,7 @@
             "architecture": "nRF51822",
             "version": "1.1.0",
             "category": "Kontakt.io",
-            "url": "https://s3-eu-west-1.amazonaws.com/kontaktio-mobile/arduino-kontaktio-1.1.0.zip",
+            "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.1.0.zip",
             "archiveFileName": "arduino-kontaktio-1.1.0.zip",
             "checksum": "SHA-256:8A146BA77AD44A344DFE7817D7A3388D3F21318489E2ED3EDCE394F02EA84FC2",
             "size": "1403617",
