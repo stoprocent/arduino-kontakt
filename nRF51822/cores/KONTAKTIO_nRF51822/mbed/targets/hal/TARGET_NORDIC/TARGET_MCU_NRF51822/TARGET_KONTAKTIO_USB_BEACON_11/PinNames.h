@@ -102,79 +102,16 @@ typedef enum {
     LED2    = p15,
     LED3    = p15,
     LED4    = p15,
-    
-    BUTTON1 = p16,
-    BUTTON2 = p17,
         
-    RX_PIN_NUMBER = p11,
-    TX_PIN_NUMBER = p9,
-    CTS_PIN_NUMBER = p10,
-    RTS_PIN_NUMBER = p8,
+    RX_PIN_NUMBER = p26,
+    TX_PIN_NUMBER = p27,
+    CTS_PIN_NUMBER = p28,
+    RTS_PIN_NUMBER = p29,
 
     // mBed interface Pins
     USBTX = TX_PIN_NUMBER,
     USBRX = RX_PIN_NUMBER,
-        
-    SPI_PSELMOSI0 = p20,
-    SPI_PSELMISO0 = p22,
-    SPI_PSELSS0 = p14,
-    SPI_PSELSCK0 = p25,
-        
-    SPI_PSELMOSI1 = p20,
-    SPI_PSELMISO1 = p22,
-    SPI_PSELSS1 = p14,
-    SPI_PSELSCK1 = p25,
-
-    SPIS_PSELMOSI = p20,
-    SPIS_PSELMISO = p22,
-    SPIS_PSELSS = p14,    
-    SPIS_PSELSCK = p25,
-
-    I2C_SDA0 = p29,
-    I2C_SCL0 = p28,
-
-/*
-    I2C_SDA1 = p13,
-    I2C_SCL1 = p15, 
-*/
-   
-    D0  = p11,
-    D1  = p9,
-    D2  = p10,
-    D3  = p8,
-    D4  = p21,
-    D5  = p23,
-    D6  = p16,
-    D7  = p17,
     
-    D8  = p19,
-    D9  = p18,
-    D10 = p14,
-    D11 = p12,
-    D12 = p13,
-    D13 = p15,
-
-    D14 = p29, // I2C - SDA
-    D15 = p28, // I2C - SCL
-
-    D16 = p25, // SPI - SCK
-    D17 = p22, // SPI - MISO
-    D18 = p20, // SPI - MOSI
-
-    A0  = p1,
-    A1  = p2,
-    A2  = p3,
-    A3  = p4,
-    A4  = p5,
-    A5  = p6,
-    
-    D19 = A0,
-    D20 = A1,
-    D21 = A2,
-    D22 = A3,
-    D23 = A4,
-    D24 = A5,
-
     // Not connected
     NC = (int)0xFFFFFFFF
 } PinName;
