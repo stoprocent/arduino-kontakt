@@ -51,6 +51,20 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
     }
 #endif
 
+#ifdef NRF51_DONGLE
+    switch(pin)
+    {
+        case 0 : return_pin = P0_15;break;      //D0/RXD/MISO
+        case 1 : return_pin = P0_16;break;       //D1/TXD/MOSI
+        case 2 : return_pin = P0_17;break;      //D2/CTS/CS/SDA
+        case 3 : return_pin = P0_18;break;       //D3/RTS/SCK/SCL
+        case 4 : return_pin = P0_19;break;      //D4
+        case 5 : return_pin = P0_20;break;      //D5
+
+        default : return_pin = (PinName)NC;break;
+    }
+#endif
+
 #ifdef SMART_BEACON_24
     switch(pin)
     {
