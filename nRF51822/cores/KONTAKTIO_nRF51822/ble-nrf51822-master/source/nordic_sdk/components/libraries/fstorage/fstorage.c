@@ -155,7 +155,7 @@ static void queue_init(void)
 
 /**@brief Function to reset a queue item to its default values.
  *
- * @param	index	Index of the queue element.
+ * @param   index   Index of the queue element.
  */
 static void cmd_reset(uint32_t index)
 {
