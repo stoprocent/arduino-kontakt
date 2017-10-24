@@ -10,16 +10,17 @@
         "platforms": [{
             "name": "Kontakt.io Beacons (nRF51822)",
             "architecture": "nRF51822",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "category": "Kontakt.io",
-            "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.1.0.zip",
+            "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.2.0.zip",
             "archiveFileName": "arduino-kontaktio-1.1.0.zip",
-            "checksum": "SHA-256:764B832AF6233C782D06DA4407CCCDCE3E6CD53FA93901175E4E18559DFD87B3",
-            "size": "1409251",
+            "checksum": "SHA-256:2418973fd5f0ae3cc11c69092d93be79288e6d45f7cd339602a3a6a6eb18fc32",
+            "size": "1414191",
             "boards": [
                 {"name": "Smart Beacon 2.2 (Kontakt.io)"},
                 {"name": "Smart Beacon 2.4 (Kontakt.io)"},
-                {"name": "USB Beacon 1.1 (Kontakt.io)"}
+                {"name": "USB Beacon 1.1 (Kontakt.io)"},
+                {"name": "NRF51 Dongle"}
             ],
             "toolsDependencies": [{
                     "packager": "Kontakt.io",
