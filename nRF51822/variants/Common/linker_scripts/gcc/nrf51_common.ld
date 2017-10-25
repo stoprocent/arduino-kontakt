@@ -106,6 +106,18 @@ SECTIONS
 
     } > RAM
 
+    __debug_start = (__etext + SIZEOF(.data));
+    .fs_data :
+    {
+        . = ALIGN(4);
+        PROVIDE(__start_fs_data = .);
+        KEEP(*(.fs_data))
+        PROVIDE(__stop_fs_data = .);
+        . = ALIGN(4);
+        __data_end__ = .;
+    }
+    __debug_stop = (__debug_start + SIZEOF(.fs_data));
+
     .bss :
     {
         . = ALIGN(4);
