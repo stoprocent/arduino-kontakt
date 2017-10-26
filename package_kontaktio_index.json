@@ -13,7 +13,7 @@
             "version": "1.2.0",
             "category": "Kontakt.io",
             "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.2.0.zip",
-            "archiveFileName": "arduino-kontaktio-1.1.0.zip",
+            "archiveFileName": "arduino-kontaktio-1.2.0.zip",
             "checksum": "SHA-256:2418973fd5f0ae3cc11c69092d93be79288e6d45f7cd339602a3a6a6eb18fc32",
             "size": "1414191",
             "boards": [
@@ -40,9 +40,36 @@
             "version": "1.2.1",
             "category": "Kontakt.io",
             "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.2.1.zip",
-            "archiveFileName": "arduino-kontaktio-1.1.0.zip",
+            "archiveFileName": "arduino-kontaktio-1.2.1.zip",
             "checksum": "SHA-256:e1bca301d6bae9dc23b6042ff0bf95829b3e5d2a5c2ec791e27710819f07516a",
             "size": "1412428",
+            "boards": [
+                {"name": "Smart Beacon 2.2 (Kontakt.io)"},
+                {"name": "Smart Beacon 2.4 (Kontakt.io)"},
+                {"name": "USB Beacon 1.1 (Kontakt.io)"},
+                {"name": "NRF51 Dongle"}
+            ],
+            "toolsDependencies": [{
+                    "packager": "Kontakt.io",
+                    "name": "arm-none-eabi-gcc",
+                    "version": "4.8.3-2014q1"
+                },
+                {
+                    "packager": "Kontakt.io",
+                    "name": "openocd",
+                    "version": "0.10.0-dev-nrf5"
+                }
+            ]
+        },
+        {
+            "name": "Kontakt.io Beacons (nRF51822)",
+            "architecture": "nRF51822",
+            "version": "1.2.2",
+            "category": "Kontakt.io",
+            "url": "https://s3-eu-west-1.amazonaws.com/kontakt-mobile/arduino-kontaktio-1.2.2.zip",
+            "archiveFileName": "arduino-kontaktio-1.2.2.zip",
+            "checksum": "SHA-256:5430fabf16fad628644481b309c45f6258d7d8ca145c25a4f523ce8bf7876223",
+            "size": "1405217",
             "boards": [
                 {"name": "Smart Beacon 2.2 (Kontakt.io)"},
                 {"name": "Smart Beacon 2.4 (Kontakt.io)"},
