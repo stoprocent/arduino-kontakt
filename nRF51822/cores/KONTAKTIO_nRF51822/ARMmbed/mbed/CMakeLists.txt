@@ -110,8 +110,3 @@ add_library(mbed-classic
     ${MBED_COMMON_SOURCES}
     ${MBED_TARGET_SOURCES}
 )
-if(CMAKE_COMPILER_IS_GNUCC)
-    target_link_libraries(mbed-classic
-        -lnosys
-    )
-endif()

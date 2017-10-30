@@ -24,15 +24,9 @@ extern "C" {
 #include "common/common.h"
 
 #include "ble_srv_common.h"
-#include "nrf_ble.h"
+#include "ble.h"
 
 error_t     btle_init(void);
-
-// flag indicating if events have been signaled or not
-// It is used by processEvents and signalEventsToProcess
-// signalEventsToProcess raise the flag and processEvents
-// clears it.
-extern bool isEventsSignaled;
 
 #ifdef __cplusplus
 }

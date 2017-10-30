@@ -152,8 +152,6 @@ public:
 
     virtual void waitForEvent(void);
 
-    virtual void processEvents();
-
 public:
     static nRF5xn& Instance(BLE::InstanceID_t instanceId);
 
