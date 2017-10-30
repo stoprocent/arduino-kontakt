@@ -3,7 +3,7 @@
 #define WIRING_BUFFER_H_
 
 
-#define SERIAL_BUFFER_MAX_SIZE 64
+#define SERIAL_BUFFER_MAX_SIZE 512
 
 class Buffer
 {
