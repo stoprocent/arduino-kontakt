@@ -347,8 +347,11 @@ ble_error_t nRF5xGap::connect(const Address_t             peerAddr,
         case NRF_ERROR_BUSY:
             return BLE_STACK_BUSY;
         default:
+#if !defined(TARGET_MCU_NRF51_16K_S110) && !defined(TARGET_MCU_NRF51_32K_S110)
         case BLE_ERROR_GAP_WHITELIST_IN_USE:
+#endif
             return BLE_ERROR_UNSPECIFIED;
+
     }
 }
 

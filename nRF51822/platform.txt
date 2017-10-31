@@ -94,4 +94,4 @@ tools.openocd.erase.pattern=
 
 tools.openocd.bootloader.params.verbose=-d2
 tools.openocd.bootloader.params.quiet=-d0
-tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{program.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "init; halt; nrf51 mass_erase; program {{{runtime.platform.path}/softdevice/s130_nrf51_1.0.0_softdevice.hex}} verify reset; shutdown;"
+tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.params.verbose} -s "{path}/scripts/" -f "{path}/scripts/interface/jlink.cfg" -c "{program.setup_command}" -f "{path}/scripts/target/nrf51.cfg" -c "init; halt; nrf51 mass_erase; program {{{runtime.platform.path}/softdevice/s{build.softdevice}_softdevice.hex}} verify reset; shutdown;"
