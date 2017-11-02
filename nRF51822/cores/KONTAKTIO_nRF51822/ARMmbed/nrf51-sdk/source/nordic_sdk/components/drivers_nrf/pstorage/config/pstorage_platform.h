@@ -66,7 +66,7 @@ static __INLINE uint32_t pstorage_flash_page_end()
 
 #define PSTORAGE_FLASH_PAGE_END     pstorage_flash_page_end()
 
-#define PSTORAGE_NUM_OF_PAGES       1                                                           /**< Number of flash pages allocated for the pstorage module excluding the swap page, configurable based on system requirements. */
+#define PSTORAGE_NUM_OF_PAGES       100                                                           /**< Number of flash pages allocated for the pstorage module excluding the swap page, configurable based on system requirements. */
 #define PSTORAGE_MIN_BLOCK_SIZE     0x0010                                                      /**< Minimum size of block that can be registered with the module. Should be configured based on system requirements, recommendation is not have this value to be at least size of word. */
 
 #define PSTORAGE_DATA_START_ADDR    ((PSTORAGE_FLASH_PAGE_END - PSTORAGE_NUM_OF_PAGES - 1) \
@@ -75,7 +75,7 @@ static __INLINE uint32_t pstorage_flash_page_end()
 #define PSTORAGE_SWAP_ADDR          PSTORAGE_DATA_END_ADDR                                      /**< Top-most page is used as swap area for clear and update. */
 
 #define PSTORAGE_MAX_BLOCK_SIZE     PSTORAGE_FLASH_PAGE_SIZE                                    /**< Maximum size of block that can be registered with the module. Should be configured based on system requirements. And should be greater than or equal to the minimum size. */
-#define PSTORAGE_CMD_QUEUE_SIZE     2                                                           /**< Maximum number of flash access commands that can be maintained by the module for all applications. Configurable. */
+#define PSTORAGE_CMD_QUEUE_SIZE     4                                                           /**< Maximum number of flash access commands that can be maintained by the module for all applications. Configurable. */
 
 
 /** Abstracts persistently memory block identifier. */

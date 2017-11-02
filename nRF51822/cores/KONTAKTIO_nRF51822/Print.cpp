@@ -195,6 +195,15 @@ size_t Print::println(const Printable& x)
   return n;
 }
 
+size_t Print::prinHexArray(char *data, uint8_t length)
+{
+    for (int i=0; i<length; i++) { 
+        if (data[i]<0x10) { print("0"); } 
+        print(data[i], HEX); 
+        print(" "); 
+    }
+}
+
 // Private Methods /////////////////////////////////////////////////////////////
 
 size_t Print::printNumber(unsigned long n, uint8_t base) {
