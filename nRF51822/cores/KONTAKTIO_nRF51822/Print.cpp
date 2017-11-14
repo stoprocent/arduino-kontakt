@@ -195,7 +195,7 @@ size_t Print::println(const Printable& x)
   return n;
 }
 
-size_t Print::prinHexArray(char *data, uint8_t length)
+size_t Print::printHexArray(char *data, uint8_t length)
 {
     for (int i=0; i<length; i++) { 
         if (data[i]<0x10) { print("0"); } 

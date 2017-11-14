@@ -1,3 +1,4 @@
+
 /* mbed Microcontroller Library
  * Copyright (c) 2013 Nordic Semiconductor
  *
@@ -126,8 +127,8 @@ typedef enum {
     SPIS_PSELSS = p26,    
     SPIS_PSELSCK = p27,
 
-    I2C_SDA0 = p19,
-    I2C_SCL0 = p20,
+    I2C_SDA0 = p17,
+    I2C_SCL0 = p18,
    
     D0  = p15,
     D1  = p16,

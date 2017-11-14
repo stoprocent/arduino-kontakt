@@ -19,6 +19,11 @@
 #define SDA  D2
 #define SCL  D3
 
+#define ACC_SA0  4
+#define ACC_CS   4
+#define ACC_INT1 5
+#define ACC_INT2 5
+
 #define DEFAULT_RX_PIN D0  
 #define DERAULT_TX_PIN D1   
 

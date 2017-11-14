@@ -37,15 +37,14 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
 #ifdef SMART_BEACON_22
     switch(pin)
     {
-        case 0 : return_pin = P0_24;break;      //D0/RXD/MISO
-        case 1 : return_pin = P0_25;break;       //D1/TXD/MOSI
-        case 2 : return_pin = P0_26;break;      //D2/CTS/CS/SDA
-        case 3 : return_pin = P0_27;break;       //D3/RTS/SCK/SCL
-
-        case 4 : return_pin = P0_3;break;      //D4
-        case 5 : return_pin = P0_4;break;      //D5
-        case 6 : return_pin = P0_5;break;      //D6
-        case 7 : return_pin = P0_6;break;       //D7
+        case 0 : return_pin = P0_24;break;    //D0/RXD/MISO
+        case 1 : return_pin = P0_25;break;    //D1/TXD/MOSI
+        case 2 : return_pin = P0_26;break;    //D2/CTS/CS/SDA
+        case 3 : return_pin = P0_27;break;    //D3/RTS/SCK/SCL
+        case 4 : return_pin = P0_3;break;     //D4
+        case 5 : return_pin = P0_4;break;     //D5
+        case 6 : return_pin = P0_5;break;     //D6
+        case 7 : return_pin = P0_6;break;     //D7
 
         default : return_pin = (PinName)NC;break;
     }
@@ -54,12 +53,12 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
 #ifdef NRF51_DONGLE
     switch(pin)
     {
-        case 0 : return_pin = P0_15;break;      //D0/RXD/MISO
-        case 1 : return_pin = P0_16;break;       //D1/TXD/MOSI
-        case 2 : return_pin = P0_17;break;      //D2/CTS/CS/SDA
-        case 3 : return_pin = P0_18;break;       //D3/RTS/SCK/SCL
-        case 4 : return_pin = P0_19;break;      //D4
-        case 5 : return_pin = P0_20;break;      //D5
+        case 0 : return_pin = P0_15;break;    //D0/RXD/MISO
+        case 1 : return_pin = P0_16;break;    //D1/TXD/MOSI
+        case 2 : return_pin = P0_17;break;    //D2/CTS/CS/SDA
+        case 3 : return_pin = P0_18;break;    //D3/RTS/SCK/SCL
+        case 4 : return_pin = P0_19;break;    //D4
+        case 5 : return_pin = P0_20;break;    //D5/INT1/INT2
 
         default : return_pin = (PinName)NC;break;
     }
@@ -68,11 +67,15 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
 #ifdef SMART_BEACON_24
     switch(pin)
     {
-        case 0 : return_pin = P0_5;break;      //D0/RXD
-        case 1 : return_pin = P0_6;break;       //D1/TXD
-        case 2 : return_pin = P0_27;break;      //D2/SDA
-        case 3 : return_pin = P0_24;break;       //D3/SCL
-
+        case 0 : return_pin = P0_5;break;     //D0/RXD
+        case 1 : return_pin = P0_6;break;     //D1/TXD
+        case 2 : return_pin = P0_27;break;    //D2/SDA
+        case 3 : return_pin = P0_24;break;    //D3/SCL
+        case 4 : return_pin = P0_26;break;    //SA0
+        case 5 : return_pin = P0_25;break;    //CS
+        case 6 : return_pin = P0_4;break;     //INT1
+        case 7 : return_pin = P0_3;break;     //INT2
+        
         default : return_pin = (PinName)NC;break;
     }
 #endif
@@ -80,8 +83,8 @@ PinName Pin_nRF51822_to_Arduino(uint32_t pin)
 #ifdef USB_BEACON_11
     switch(pin)
     {
-        case 0 : return_pin = P0_26;break;      //D0/RXD
-        case 1 : return_pin = P0_27;break;       //D1/TXD
+        case 0 : return_pin = P0_26;break;    //D0/RXD
+        case 1 : return_pin = P0_27;break;    //D1/TXD
 
         default : return_pin = (PinName)NC;break;
     }
