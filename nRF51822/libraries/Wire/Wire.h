@@ -73,9 +73,11 @@ public :
     TwoWire();
     void begin();
     void begin(uint32_t scl_pin, uint32_t sda_pin, uint32_t speed);
+    void sleep();
+    void reset();
+
     void beginTransmission(uint8_t);
     void beginTransmission(int);
-
     int8_t endTransmission(void);
     int8_t endTransmission(uint8_t);
 

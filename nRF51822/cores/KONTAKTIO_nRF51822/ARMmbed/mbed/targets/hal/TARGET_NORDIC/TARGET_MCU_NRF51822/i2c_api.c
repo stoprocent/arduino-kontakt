@@ -103,6 +103,13 @@ void i2c_init(i2c_t *obj, PinName sda, PinName scl)
     twi_master_init(obj, sda, scl, 100000);
 }
 
+void i2c_sleep(i2c_t *obj)
+{
+    obj->i2c->EVENTS_ERROR = 0;
+    obj->i2c->ENABLE       = TWI_ENABLE_ENABLE_Disabled << TWI_ENABLE_ENABLE_Pos;
+    obj->i2c->POWER        = 0;
+}
+
 void i2c_reset(i2c_t *obj)
 {
     obj->i2c->EVENTS_ERROR = 0;

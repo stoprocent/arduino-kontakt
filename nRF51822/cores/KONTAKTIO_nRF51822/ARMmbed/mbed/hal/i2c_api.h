@@ -109,6 +109,11 @@ int  i2c_read(i2c_t *obj, int address, char *data, int length, int stop);
  */
 int  i2c_write(i2c_t *obj, int address, const char *data, int length, int stop);
 
+/** Powers Down I2C peripheral.
+ *  @param obj The i2c object
+ */
+void i2c_sleep(i2c_t *obj);
+
 /** Reset I2C peripheral. TODO: The action here. Most of the implementation sends stop().
  *  @param obj The i2c object
  */
